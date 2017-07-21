@@ -1,0 +1,58 @@
+body.gen{
+    background-color: rgba(27, 20, 20, 0.29);
+    color: white;
+}
+
+button.accordion {
+    color: grey;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+/*background color for button on active and hover*/
+button.accordion.active, button.accordion:hover {
+    color: white;
+    background-color: rgba(19, 11, 11, 0.39);
+    box-shadow: 5px 5px 5px grey;
+    text-shadow: 0 0 6px #130000;
+}
+
+/*Add plus sign to button */
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    
+}
+
+/*Add minus sign to button on active*/
+button.accordion.active:after {
+    content: "\2212";
+    
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: rgba(68, 62, 62, 0.26);
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: none;
+    border-radius: 0px 0px 26px 26px;
+    margin-left: 10PX;
+    box-shadow: 5px 5px 5px grey;
+}
+
+div.showPanel{
+    display:block;
+}
