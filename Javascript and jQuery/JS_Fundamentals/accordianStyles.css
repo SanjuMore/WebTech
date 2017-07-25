@@ -26,6 +26,7 @@ button.accordion.active, button.accordion:hover {
     text-shadow: 0 0 6px #130000;
 }
 
+
 /*Add plus sign to button */
 button.accordion:after {
     content: '\002B';
@@ -39,6 +40,7 @@ button.accordion:after {
 /*Add minus sign to button on active*/
 button.accordion.active:after {
     content: "\2212";
+    color: white;
     
 }
 

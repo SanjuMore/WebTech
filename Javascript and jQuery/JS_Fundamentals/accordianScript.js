@@ -11,4 +11,12 @@ $(function(){
             $(this).addClass('active');
        }
     });
+    
+    $('div>p>input[type="checkbox"]').click(function(){
+        if($(this).context.checked){
+            $('#dynamo').append('<span>'+$(this).context.name +'</span>')
+        }else{
+            $('#dynamo>span').remove(":contains('"+$(this).context.name+"')");
+       }
+    });
 })
